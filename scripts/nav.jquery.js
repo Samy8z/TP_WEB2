@@ -1,10 +1,10 @@
 
 $('#solutions').on('click', function click() {
-    $('#navSolutions').toggle()
-    $('#navMore').classList.add('hidden')
+    $('#navSolutions').fadeToggle(500)
+    $('#navMore').fadeOut(500)
 })
 
 $('#more').on('click', function click() {
-    $('#navMore').toggle()
-    $('#navSolution').classList.add('hidden')
+    $('#navMore').fadeToggle(500)
+    $('#navSolution').fadeOut(500)
 })
