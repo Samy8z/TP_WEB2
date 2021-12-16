@@ -8,7 +8,7 @@ function CloseModal() {
 }
 
 $('#banner-close').on('click', function click() {
-    $('#banner').fadeOut(50)
+    $('#banner').fadeOut(80)
 })
 $('#banner-close')
 
