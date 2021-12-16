@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate website</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="styles/tp-2-as.css" rel="stylesheet" />    
 </head>
 
 <body class="bg-gray-100">
@@ -667,28 +668,28 @@
                 </div>
             </div>
             <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="#" method="POST">
+                <form id="myform" action="#" method="POST">
                     <div class="shadow overflow-hidden sm:rounded-md">
                         <div class="px-4 py-5 bg-white sm:p-6">
                             <div class="grid grid-cols-6 gap-6">
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700">First
                                         name</label>
-                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required='true' placeholder="John">
+                                    <input type="text" name="firstName" id="firstName" autocomplete="given-name"
+                                        class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="John">
                                 </div>
     
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700">Last
                                         name</label>
-                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    <input type="text" name="lastName" id="lastName" autocomplete="family-name"
                                         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required='required' placeholder="Doe">
                                 </div>
     
                                 <div class="col-span-6 sm:col-span-4">
-                                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email
+                                    <label for="emailAddress" class="block text-sm font-medium text-gray-700">Email
                                         address</label>
-                                    <input type="text" name="email-address" id="email-address" autocomplete="email"
+                                    <input type="text" name="emailAddress" id="emailAddress" autocomplete="email"
                                         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required='true' placeholder="john.doe@gmail.com">
                                 </div>
     
@@ -703,10 +704,10 @@
                                 </div>
     
                                 <div class="col-span-6">
-                                    <label for="street-address" class="block text-sm font-medium text-gray-700">Street
+                                    <label for="streetAddress" class="block text-sm font-medium text-gray-700">Street
                                         address</label>
-                                    <input type="text" name="street-address" id="street-address"
-                                        autocomplete="street-address"
+                                    <input type="text" name="streetAddress" id="streetAddress"
+                                        autocomplete="streetAddress"
                                         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required='true' placeholder="1 Jennings Road Henderson">
                                 </div>
     
@@ -724,9 +725,9 @@
                                 </div>
     
                                 <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                    <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP /
+                                    <label for="postalCode" class="block text-sm font-medium text-gray-700">ZIP /
                                         Postal code</label>
-                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                    <input type="text" name="postalCode" id="postalCode" autocomplete="postalCode"
                                         class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required='true' placeholder="42420">
                                 </div>
                             </div>
@@ -814,7 +815,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="scripts/tp-2-as.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="https://malsup.github.io/jquery.form.js"></script> 
     <script src="scripts/nav.jquery.js"></script>
 </body>
 
