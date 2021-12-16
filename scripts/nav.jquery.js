@@ -1,8 +1,10 @@
+$('#conf-modal').fadeIn(300)
+
 $('#modal-cancel').on('click', CloseModal)
 $('#modal-desac').on('click', CloseModal)
 
 function CloseModal() {
-    $('#conf-modal').fadeOut(300)
+    $('#conf-modal').fadeOut(200)
 }
 
 $('#banner-close').on('click', function click() {
