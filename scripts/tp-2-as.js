@@ -27,3 +27,18 @@ function closeBanner() {
 
 
 close.addEventListener('click', closeBanner)
+
+
+/*
+let solutions = document.getElementById('solutions')
+let nav_solutions = document.getElementById('nav-solutions')
+
+
+function closeSolutionsNav() {
+    close.removeEventListener('click', closeSolutionsNav)
+    nav_solutions.classList.add('hidden')
+}
+
+
+close.addEventListener('click', closeSolutionsNav)*/
+
