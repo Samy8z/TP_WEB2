@@ -14,21 +14,25 @@ $(document).ready(function () {
       height: "-=2%",
       width: "-=2%"
     }, 100, function() {
-      $('#mobile-menu').hide()
-    })
+      $('#mobile-menu').css('display', 'none');
+    });
   })
 
   $('#mobile-menu-open').on('click', function click() {
     $('#mobile-menu').css('z-index', 9999);
-    $('#mobile-menu').show()
-    $( "#mobile-menu" ).animate({
-      opacity: 1,
-      left: "10px",
-      "top": "10px",
-      height: "+=2%",
-      width: "+=2%"
-      }, 200
-    );
+    
+    // The same works with hidden
+    if ($('#mobile-menu').is(":hidden")) {
+      $( "#mobile-menu" ).animate({
+        opacity: 1,
+        left: "10px",
+        "top": "10px",
+        height: "+=2%",
+        width: "+=2%"
+        }, 200
+      );
+      $('#mobile-menu').css('display', 'block')
+    }
   });
 
   //Make Menu follow scrolling
