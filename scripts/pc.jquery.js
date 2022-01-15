@@ -1,18 +1,14 @@
-$(document).ready(function () { 
+$(document).ready(function () {  //wiat for document to be ready
 
-  $('#conf-modal').fadeIn(300)
-
-  $('#modal-cancel').on('click', CloseModal)
-  $('#modal-desac').on('click', CloseModal)
-
-  function CloseModal() {
-      $('#conf-modal').fadeOut(200)
-  }
+  //Banner close (SECTION 2)
 
   $('#banner-close').on('click', function click() {
       $('#banner').fadeOut(80)
   })
   $('#banner-close')
+
+
+  //Header Nav Menu (SECTION 1)
 
   $('#solutions').on('click', function click() {
       $('#navSolutions').fadeToggle(100)
@@ -32,6 +28,9 @@ $(document).ready(function () {
           $('#navSolutions').fadeOut(100)
       }
   })
+
+
+//Form validate (SECTION 4)
 
   $("#myform").validate({
       rules: {
@@ -98,4 +97,16 @@ $(document).ready(function () {
         },
       }
   });
+  
+  //modal close (SECTION 5)
+
+  $('#conf-modal').fadeIn(300)
+
+  $('#modal-cancel').on('click', CloseModal)
+  $('#modal-desac').on('click', CloseModal)
+
+  function CloseModal() {
+      $('#conf-modal').fadeOut(200)
+  }
+
 });

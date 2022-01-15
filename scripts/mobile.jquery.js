@@ -1,4 +1,6 @@
 $(document).ready(function () { 
+
+  //Header Mobile Menu (SECTION 1 MOBILE PART)
   $( "#mobile-menu" ).css({
     left: "15px",
     top: "15px"
@@ -29,6 +31,7 @@ $(document).ready(function () {
     );
   });
 
+  //Make Menu follow scrolling
   jQuery(function($) {
     $(window).scroll(function fix_element() {
       $('#mobile-menu').css(
