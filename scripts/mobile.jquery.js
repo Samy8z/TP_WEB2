@@ -29,27 +29,14 @@ $(document).ready(function () {
     );
   });
 
-  var documentHeight = 0;
-  var topPadding = 15;
-  $(function() {
-      var offset = $("#mobile-menu").offset();
-      documentHeight = $(document).height();
-      $(window).scroll(function() {
-          var sideBarHeight = $("#mobile-menu").height();
-          if ($(window).scrollTop() > offset.top) {
-              var newPosition = ($(window).scrollTop() - offset.top) + topPadding;
-              var maxPosition = documentHeight - (sideBarHeight + 100);
-              if (newPosition > maxPosition) {
-                  newPosition = maxPosition;
-              }
-              $("#mobile-menu").stop().animate({
-                  marginTop: newPosition
-              });
-          } else {
-              $("#mobile-menu").stop().animate({
-                  marginTop: 0
-              });
-          };
-      });
+  jQuery(function($) {
+    $(window).scroll(function fix_element() {
+      $('#mobile-menu').css(
+        $(window).scrollTop() > 100
+          ? { 'position': 'fixed', 'top': '10px' }
+          : { 'position': 'relative', 'top': 'auto' }
+      );
+      return fix_element;
+    }());
   });
 })
